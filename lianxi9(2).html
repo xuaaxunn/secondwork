@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .footer ,.header{
+        background-color: rgb(116, 116, 116);
+        color: aliceblue;
+       padding: 15px;
+       }
+
+       .meanu{
+        width: 25%;
+        margin: 0;
+       }
+       .content{
+        width:75%;
+        float: right;
+        position:absolute;
+        right: 0;
+        top:0;
+       }
+       .middle{
+        display: block;
+        position: relative;
+
+       }
+       .column{
+        display: flex;
+        flex-direction: column;
+       }
+       .meanu li{
+        background-color: rgb(164, 164, 240);
+        padding: 8px;
+        margin-bottom: 8px;
+        color: aliceblue;
+       }
+       .row{
+            background-color: rgb(50, 50, 50);
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+        .row > li{
+            float: left;
+        }
+        li a{
+            display: inline-block;
+            color: aliceblue;
+            text-align: center;
+            padding: 14px 16px;
+        }
+
+        .left-bars-ul{
+            padding: 0;
+            padding-right: 2em;
+        }
+
+        li a:hover{
+            background-color: #111;
+        }
+        
+        .head{
+            background-color: red;
+        }
+       
+        .left-bars{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+       <h1>header</h1>
+    </div>
+    <br>
+    <ul class="row">
+        <li class="head"><a href="#home">home</a></li>
+        <li><a href="#news">
+            news
+        </a>
+        </li>
+        <li>
+            <a href="#contact">
+            contact
+            </a>
+        </li>
+        <li>
+            <a href="#about">
+                about
+            </a>
+        </li>
+    </ul>
+   <div class="middle">
+    <div class=" column meanu left-bars">
+        <ul class="left-bars-ul">
+            <li>the flight</li>
+            <li>the city</li>
+            <li>the island</li>
+            <li>the food</li>
+        </ul>
+    </div>
+    <div class=" column content">
+        <h1>The city</h1>
+        <p>chania is the capital of the chania region on the island of crete</p>
+    </div>    
+   </div>
+   <div class="footer">
+    <p>footer text</p>
+   </div>
+</body>
+</html>
